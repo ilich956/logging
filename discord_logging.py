@@ -23,7 +23,7 @@ client = discord.Client(intents=intents)
 
 url = WEATHER_URL + "appid=" + API + "&q=" + CITY
 response = requests.get(url).json()
-
+ 
 def celsius(kelvin):
     return round(kelvin - 273.15, 2)
 
